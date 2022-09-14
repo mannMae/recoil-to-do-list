@@ -19,7 +19,7 @@ function CreateDo() {
     setValue("toDo", "");
   };
   return (
-    <form onSubmit={(e) => handleSubmit(handleValid)}>
+    <form onSubmit={handleSubmit(handleValid)}>
       <input
         {...register("toDo", { required: "Please Write a To Do" })}
         placeholder="Write!"
